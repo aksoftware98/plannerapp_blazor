@@ -1,0 +1,5 @@
+﻿<linker>
+  <assembly fullname="PlannerApp.Client">
+    <type fullname="*" required="true" />
+  </assembly>
+</linker>
