@@ -494,6 +494,19 @@
         "runtime": {
           "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
         }
+      },
+      "PlannerApp.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "System.ComponentModel.Annotations": "4.7.0"
+        },
+        "compile": {
+          "bin/placeholder/PlannerApp.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PlannerApp.Shared.dll": {}
+        }
       }
     }
   },
@@ -2026,6 +2039,11 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "PlannerApp.Shared/1.0.0": {
+      "type": "project",
+      "path": "../PlannerApp.Shared/PlannerApp.Shared.csproj",
+      "msbuildProject": "../PlannerApp.Shared/PlannerApp.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2034,6 +2052,7 @@
       "Microsoft.AspNetCore.Blazor.Build >= 3.2.0-preview1.20073.1",
       "Microsoft.AspNetCore.Blazor.DevServer >= 3.2.0-preview1.20073.1",
       "Microsoft.AspNetCore.Blazor.HttpClient >= 3.2.0-preview1.20073.1",
+      "PlannerApp.Shared >= 1.0.0",
       "Radzen.Blazor >= 2.2.5"
     ]
   },
@@ -2045,11 +2064,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dell\\Documents\\AK Academy\\PlannerApp\\Blazor WASM\\Project\\PlannerApp\\PlannerApp.Client\\PlannerApp.Client.csproj",
+      "projectUniqueName": "C:\\Users\\dell\\Documents\\AK Academy\\PlannerApp\\Blazor WASM\\Project\\PlannerApp\\src\\PlannerApp.Client\\PlannerApp.Client.csproj",
       "projectName": "PlannerApp.Client",
-      "projectPath": "C:\\Users\\dell\\Documents\\AK Academy\\PlannerApp\\Blazor WASM\\Project\\PlannerApp\\PlannerApp.Client\\PlannerApp.Client.csproj",
+      "projectPath": "C:\\Users\\dell\\Documents\\AK Academy\\PlannerApp\\Blazor WASM\\Project\\PlannerApp\\src\\PlannerApp.Client\\PlannerApp.Client.csproj",
       "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dell\\Documents\\AK Academy\\PlannerApp\\Blazor WASM\\Project\\PlannerApp\\PlannerApp.Client\\obj\\",
+      "outputPath": "C:\\Users\\dell\\Documents\\AK Academy\\PlannerApp\\Blazor WASM\\Project\\PlannerApp\\src\\PlannerApp.Client\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -2069,7 +2088,11 @@
       },
       "frameworks": {
         "netstandard2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\dell\\Documents\\AK Academy\\PlannerApp\\Blazor WASM\\Project\\PlannerApp\\src\\PlannerApp.Shared\\PlannerApp.Shared.csproj": {
+              "projectPath": "C:\\Users\\dell\\Documents\\AK Academy\\PlannerApp\\Blazor WASM\\Project\\PlannerApp\\src\\PlannerApp.Shared\\PlannerApp.Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

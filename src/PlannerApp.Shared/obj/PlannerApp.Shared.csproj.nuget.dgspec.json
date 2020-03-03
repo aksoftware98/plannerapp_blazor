@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dell\\Documents\\AK Academy\\PlannerApp\\Blazor WASM\\Project\\PlannerApp\\PlannerApp.Shared\\PlannerApp.Shared.csproj": {}
+    "C:\\Users\\dell\\Documents\\AK Academy\\PlannerApp\\Blazor WASM\\Project\\PlannerApp\\src\\PlannerApp.Shared\\PlannerApp.Shared.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dell\\Documents\\AK Academy\\PlannerApp\\Blazor WASM\\Project\\PlannerApp\\PlannerApp.Shared\\PlannerApp.Shared.csproj": {
+    "C:\\Users\\dell\\Documents\\AK Academy\\PlannerApp\\Blazor WASM\\Project\\PlannerApp\\src\\PlannerApp.Shared\\PlannerApp.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dell\\Documents\\AK Academy\\PlannerApp\\Blazor WASM\\Project\\PlannerApp\\PlannerApp.Shared\\PlannerApp.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\dell\\Documents\\AK Academy\\PlannerApp\\Blazor WASM\\Project\\PlannerApp\\src\\PlannerApp.Shared\\PlannerApp.Shared.csproj",
         "projectName": "PlannerApp.Shared",
-        "projectPath": "C:\\Users\\dell\\Documents\\AK Academy\\PlannerApp\\Blazor WASM\\Project\\PlannerApp\\PlannerApp.Shared\\PlannerApp.Shared.csproj",
+        "projectPath": "C:\\Users\\dell\\Documents\\AK Academy\\PlannerApp\\Blazor WASM\\Project\\PlannerApp\\src\\PlannerApp.Shared\\PlannerApp.Shared.csproj",
         "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dell\\Documents\\AK Academy\\PlannerApp\\Blazor WASM\\Project\\PlannerApp\\PlannerApp.Shared\\obj\\",
+        "outputPath": "C:\\Users\\dell\\Documents\\AK Academy\\PlannerApp\\Blazor WASM\\Project\\PlannerApp\\src\\PlannerApp.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -48,6 +48,10 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[4.7.0, )"
             }
           },
           "imports": [

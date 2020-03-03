@@ -17,6 +17,7 @@ obj\Debug\netstandard2.1\blazor\linker\Mono.WebAssembly.Interop.dll
 obj\Debug\netstandard2.1\blazor\linker\mscorlib.dll
 obj\Debug\netstandard2.1\blazor\linker\netstandard.dll
 obj\Debug\netstandard2.1\blazor\linker\PlannerApp.Client.dll
+obj\Debug\netstandard2.1\blazor\linker\PlannerApp.Shared.dll
 obj\Debug\netstandard2.1\blazor\linker\Radzen.Blazor.dll
 obj\Debug\netstandard2.1\blazor\linker\System.ComponentModel.DataAnnotations.dll
 obj\Debug\netstandard2.1\blazor\linker\System.Core.dll
@@ -31,3 +32,4 @@ obj\Debug\netstandard2.1\blazor\linker\System.Xml.Linq.dll
 obj\Debug\netstandard2.1\blazor\linker\WebAssembly.Bindings.dll
 obj\Debug\netstandard2.1\blazor\linker\WebAssembly.Net.Http.dll
 obj\Debug\netstandard2.1\blazor\linker\PlannerApp.Client.pdb
+obj\Debug\netstandard2.1\blazor\linker\PlannerApp.Shared.pdb
