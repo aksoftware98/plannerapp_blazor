@@ -2,11 +2,15 @@
 @layout AuthLayout
 @using PlannerApp.Shared.Models
 
+@inject AuthenticationService  authService
+@inject NavigationManager navigationManager
+
 <div class="row">
     <div class="col-12">
         <h2>Create a new account</h2>
         <EditForm Model="model" OnValidSubmit="RegisterUser">
             <RadzenCard>
+                <AlertMessage Message="@message" MessageType="@messageType" />
                 <DataAnnotationsValidator />
                 <ValidationSummary />
 
@@ -26,9 +30,11 @@
                 <RadzenPassword @bind-Value="model.ConfirmPassword"></RadzenPassword>
                 <hr />
                 <RadzenButton ButtonType="Radzen.ButtonType.Submit" Text="Register"
-                              ButtonStyle="Radzen.ButtonStyle.Primary" class="btn-block mr-2" />
+                              ButtonStyle="Radzen.ButtonStyle.Primary" class="btn-block mr-2"
+                              Disabled="isBusy"/>
                 <RadzenButton ButtonType="Radzen.ButtonType.Button" Text="Login"
-                              ButtonStyle="Radzen.ButtonStyle.Secondary" class="btn-block mr-2" />
+                              ButtonStyle="Radzen.ButtonStyle.Secondary" class="btn-block mr-2"
+                              Disabled="isBusy"/>
             </RadzenCard>
         </EditForm>
     </div>
@@ -38,8 +44,24 @@
 @code {
     RegisterRequest model = new RegisterRequest();
 
-    public void RegisterUser()
-    {
+    bool isBusy = false;
+    string message = string.Empty;
+    Models.AlertMessageType messageType = Models.AlertMessageType.Success;
 
+    public async Task RegisterUser()
+    {
+        isBusy = true;
+        var result = await authService.RegisterUserAsync(model);
+        if(result.IsSuccess)
+        {
+            message = result.Message;
+            messageType = Models.AlertMessageType.Success;
+        }
+        else
+        {
+            message = result.Errors.FirstOrDefault() ?? result.Message;
+            messageType = Models.AlertMessageType.Error;
+        }
+        isBusy = false;
     }
 }

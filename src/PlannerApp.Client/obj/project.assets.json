@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.1": {
+      "AKSoftware.WebApi/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/AKSoftware.WebApi.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AKSoftware.WebApi.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Authorization/3.1.0": {
         "type": "package",
         "dependencies": {
@@ -267,6 +279,15 @@
           "lib/netstandard2.1/Mono.WebAssembly.Interop.dll": {}
         }
       },
+      "Newtonsoft.Json/11.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
       "Radzen.Blazor/2.2.5": {
         "type": "package",
         "dependencies": {
@@ -499,6 +520,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "AKSoftware.WebApi": "3.0.0",
           "System.ComponentModel.Annotations": "4.7.0"
         },
         "compile": {
@@ -511,6 +533,19 @@
     }
   },
   "libraries": {
+    "AKSoftware.WebApi/3.0.0": {
+      "sha512": "oTmlV2XyhNJ1XjASz6iwxIklgMnPgAmyvPOOZvF46H+WqqLYXMiyFUgtpTwzbuIzW7V+nBOWA1pNAs2IFb8n6A==",
+      "type": "package",
+      "path": "aksoftware.webapi/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "aksoftware.webapi.3.0.0.nupkg.sha512",
+        "aksoftware.webapi.nuspec",
+        "lib/netstandard2.0/AKSoftware.WebApi.dll",
+        "license.txt"
+      ]
+    },
     "Microsoft.AspNetCore.Authorization/3.1.0": {
       "sha512": "R/0qFIu1m7jJFD0OuLIjLXC0uYQxFwwW7ylVvGgUPUpOJJK0bKJjfrDu20kY1Yw0hy9ejZYZEdUZHRm3ei0+3w==",
       "type": "package",
@@ -1145,6 +1180,36 @@
         "lib/netstandard2.1/Mono.WebAssembly.Interop.xml",
         "mono.webassembly.interop.3.2.0-preview1.20073.1.nupkg.sha512",
         "mono.webassembly.interop.nuspec"
+      ]
+    },
+    "Newtonsoft.Json/11.0.2": {
+      "sha512": "IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
+      "type": "package",
+      "path": "newtonsoft.json/11.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.11.0.2.nupkg.sha512",
+        "newtonsoft.json.nuspec"
       ]
     },
     "Radzen.Blazor/2.2.5": {

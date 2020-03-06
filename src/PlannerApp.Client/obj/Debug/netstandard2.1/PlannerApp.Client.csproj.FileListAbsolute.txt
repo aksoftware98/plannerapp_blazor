@@ -218,3 +218,12 @@ C:\Users\dell\Documents\AK Academy\PlannerApp\Blazor WASM\Project\PlannerApp\src
 C:\Users\dell\Documents\AK Academy\PlannerApp\Blazor WASM\Project\PlannerApp\src\PlannerApp.Client\bin\Debug\netstandard2.1\dist\_framework\_bin\PlannerApp.Shared.dll
 C:\Users\dell\Documents\AK Academy\PlannerApp\Blazor WASM\Project\PlannerApp\src\PlannerApp.Client\bin\Debug\netstandard2.1\PlannerApp.Shared.dll
 C:\Users\dell\Documents\AK Academy\PlannerApp\Blazor WASM\Project\PlannerApp\src\PlannerApp.Client\bin\Debug\netstandard2.1\PlannerApp.Shared.pdb
+C:\Users\dell\Documents\AK Academy\PlannerApp\Blazor WASM\Project\PlannerApp\src\PlannerApp.Client\bin\Debug\netstandard2.1\dist\_framework\_bin\AKSoftware.WebApi.dll
+C:\Users\dell\Documents\AK Academy\PlannerApp\Blazor WASM\Project\PlannerApp\src\PlannerApp.Client\bin\Debug\netstandard2.1\dist\_framework\_bin\Newtonsoft.Json.dll
+C:\Users\dell\Documents\AK Academy\PlannerApp\Blazor WASM\Project\PlannerApp\src\PlannerApp.Client\bin\Debug\netstandard2.1\dist\_framework\_bin\System.Data.dll
+C:\Users\dell\Documents\AK Academy\PlannerApp\Blazor WASM\Project\PlannerApp\src\PlannerApp.Client\bin\Debug\netstandard2.1\dist\_framework\_bin\System.Numerics.dll
+C:\Users\dell\Documents\AK Academy\PlannerApp\Blazor WASM\Project\PlannerApp\src\PlannerApp.Client\bin\Debug\netstandard2.1\dist\_framework\_bin\System.Runtime.Serialization.dll
+C:\Users\dell\Documents\AK Academy\PlannerApp\Blazor WASM\Project\PlannerApp\src\PlannerApp.Client\bin\Debug\netstandard2.1\AKSoftware.WebApi.dll
+C:\Users\dell\Documents\AK Academy\PlannerApp\Blazor WASM\Project\PlannerApp\src\PlannerApp.Client\bin\Debug\netstandard2.1\Newtonsoft.Json.dll
+C:\Users\dell\Documents\AK Academy\PlannerApp\Blazor WASM\Project\PlannerApp\src\PlannerApp.Client\obj\Debug\netstandard2.1\RazorDeclaration\Shared\AlertMessage.razor.g.cs
+C:\Users\dell\Documents\AK Academy\PlannerApp\Blazor WASM\Project\PlannerApp\src\PlannerApp.Client\obj\Debug\netstandard2.1\Razor\Shared\AlertMessage.razor.g.cs

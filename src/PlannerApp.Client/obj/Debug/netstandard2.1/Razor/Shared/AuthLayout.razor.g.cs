@@ -65,6 +65,13 @@ using Radzen.Blazor;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 9 "C:\Users\dell\Documents\AK Academy\PlannerApp\Blazor WASM\Project\PlannerApp\src\PlannerApp.Client\_Imports.razor"
+using PlannerApp.Shared.Services;
+
+#line default
+#line hidden
+#nullable disable
     public partial class AuthLayout : LayoutComponentBase
     {
         #pragma warning disable 1998
