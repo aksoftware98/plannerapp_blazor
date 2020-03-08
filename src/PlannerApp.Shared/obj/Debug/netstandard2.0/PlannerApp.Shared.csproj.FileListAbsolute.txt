@@ -1,7 +1,6 @@
 C:\Users\dell\Documents\AK Academy\PlannerApp\Blazor WASM\Project\PlannerApp\src\PlannerApp.Shared\bin\Debug\netstandard2.0\PlannerApp.Shared.deps.json
 C:\Users\dell\Documents\AK Academy\PlannerApp\Blazor WASM\Project\PlannerApp\src\PlannerApp.Shared\bin\Debug\netstandard2.0\PlannerApp.Shared.dll
 C:\Users\dell\Documents\AK Academy\PlannerApp\Blazor WASM\Project\PlannerApp\src\PlannerApp.Shared\bin\Debug\netstandard2.0\PlannerApp.Shared.pdb
-C:\Users\dell\Documents\AK Academy\PlannerApp\Blazor WASM\Project\PlannerApp\src\PlannerApp.Shared\obj\Debug\netstandard2.0\PlannerApp.Shared.csprojAssemblyReference.cache
 C:\Users\dell\Documents\AK Academy\PlannerApp\Blazor WASM\Project\PlannerApp\src\PlannerApp.Shared\obj\Debug\netstandard2.0\PlannerApp.Shared.AssemblyInfoInputs.cache
 C:\Users\dell\Documents\AK Academy\PlannerApp\Blazor WASM\Project\PlannerApp\src\PlannerApp.Shared\obj\Debug\netstandard2.0\PlannerApp.Shared.AssemblyInfo.cs
 C:\Users\dell\Documents\AK Academy\PlannerApp\Blazor WASM\Project\PlannerApp\src\PlannerApp.Shared\obj\Debug\netstandard2.0\PlannerApp.Shared.dll

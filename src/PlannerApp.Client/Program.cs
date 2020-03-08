@@ -19,7 +19,6 @@ namespace PlannerApp.Client
             {
                 return new AuthenticationService(URL);
             });
-
             builder.RootComponents.Add<App>("app");
 
             await builder.Build().RunAsync();

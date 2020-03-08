@@ -1,6 +1,8 @@
 obj\Debug\netstandard2.1\blazor\linker\AKSoftware.WebApi.dll
+obj\Debug\netstandard2.1\blazor\linker\Blazored.LocalStorage.dll
 obj\Debug\netstandard2.1\blazor\linker\Microsoft.AspNetCore.Blazor.dll
 obj\Debug\netstandard2.1\blazor\linker\Microsoft.AspNetCore.Blazor.HttpClient.dll
+obj\Debug\netstandard2.1\blazor\linker\Microsoft.AspNetCore.Components.Authorization.dll
 obj\Debug\netstandard2.1\blazor\linker\Microsoft.AspNetCore.Components.dll
 obj\Debug\netstandard2.1\blazor\linker\Microsoft.AspNetCore.Components.Forms.dll
 obj\Debug\netstandard2.1\blazor\linker\Microsoft.AspNetCore.Components.Web.dll

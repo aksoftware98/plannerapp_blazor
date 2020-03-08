@@ -34,7 +34,7 @@
                               Disabled="isBusy"/>
                 <RadzenButton ButtonType="Radzen.ButtonType.Button" Text="Login"
                               ButtonStyle="Radzen.ButtonStyle.Secondary" class="btn-block mr-2"
-                              Disabled="isBusy"/>
+                              Disabled="isBusy" Click="GoToLogin"/>
             </RadzenCard>
         </EditForm>
     </div>
@@ -63,5 +63,10 @@
             messageType = Models.AlertMessageType.Error;
         }
         isBusy = false;
+    }
+
+    void GoToLogin()
+    {
+        navigationManager.NavigateTo("/auth/login");
     }
 }
