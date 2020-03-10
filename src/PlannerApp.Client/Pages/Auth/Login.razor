@@ -12,6 +12,14 @@
         <EditForm Model="model" OnValidSubmit="LoginUser">
             <RadzenCard>
                 <AlertMessage Message="@message" MessageType="@messageType" />
+
+                <ul>
+                    @foreach (var item in userInfo)
+                    {
+                        <li>@item.Key  : @item.Value</li>
+                    }
+                </ul>
+
                 <DataAnnotationsValidator />
                 <ValidationSummary />
 
@@ -41,21 +49,24 @@
     string message = string.Empty;
     Models.AlertMessageType messageType = Models.AlertMessageType.Success;
 
+    Dictionary<string, string> userInfo = new Dictionary<string, string>(); 
+
     public async Task LoginUser()
     {
-        //isBusy = true;
-        //var result = await authService.RegisterUserAsync(model);
-        //if (result.IsSuccess)
-        //{
-        //    message = result.Message;
-        //    messageType = Models.AlertMessageType.Success;
-        //}
-        //else
-        //{
-        //    message = result.Errors.FirstOrDefault() ?? result.Message;
-        //    messageType = Models.AlertMessageType.Error;
-        //}
-        //isBusy = false;
+        isBusy = true;
+        var result = await authService.LoginUserAsync(model);
+        if (result.IsSuccess)
+        {
+            message = "Welcome to PlannerApp";
+            userInfo = result.UserInfo; 
+            messageType = Models.AlertMessageType.Success;
+        }
+        else
+        {
+            message = result.Message;
+            messageType = Models.AlertMessageType.Error;
+        }
+        isBusy = false;
     }
 
     void GoToRegister()
