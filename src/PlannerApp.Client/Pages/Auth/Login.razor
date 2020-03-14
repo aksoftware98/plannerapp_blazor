@@ -28,7 +28,7 @@
                               Disabled="isBusy" />
                 <RadzenButton ButtonType="Radzen.ButtonType.Button" Text="Register"
                               ButtonStyle="Radzen.ButtonStyle.Secondary" class="btn-block mr-2"
-                              Disabled="isBusy" Click="GoToRegister"/>
+                              Disabled="isBusy" Click="GoToRegister" />
             </RadzenCard>
         </EditForm>
     </div>
@@ -36,6 +36,7 @@
 
 
 @code {
+
     LoginRequest model = new LoginRequest();
 
     bool isBusy = false;
@@ -50,7 +51,6 @@
         {
             message = "Welcome to PlannerApp";
             messageType = Models.AlertMessageType.Success;
-
             var userInfo = new PlannerApp.Client.Models.LocalUserInfo()
             {
                 AccessToken = result.Message,
@@ -61,8 +61,6 @@
             };
 
             await storageService.SetItemAsync("User", userInfo);
-
-
         }
         else
         {
