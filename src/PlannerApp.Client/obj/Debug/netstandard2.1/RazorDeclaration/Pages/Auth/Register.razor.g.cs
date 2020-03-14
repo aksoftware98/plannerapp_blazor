@@ -77,6 +77,13 @@ using PlannerApp.Shared.Services;
 #line hidden
 #nullable disable
 #nullable restore
+#line 10 "C:\Users\dell\Documents\AK Academy\PlannerApp\Blazor WASM\Project\PlannerApp\src\PlannerApp.Client\_Imports.razor"
+using Blazored.LocalStorage;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 3 "C:\Users\dell\Documents\AK Academy\PlannerApp\Blazor WASM\Project\PlannerApp\src\PlannerApp.Client\Pages\Auth\Register.razor"
 using PlannerApp.Shared.Models;
 

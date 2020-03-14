@@ -215,6 +215,7 @@ C:\Users\dell\Documents\AK Academy\PlannerApp\Blazor WASM\Project\PlannerApp\src
 C:\Users\dell\Documents\AK Academy\PlannerApp\Blazor WASM\Project\PlannerApp\src\PlannerApp.Client\obj\Debug\netstandard2.1\RazorDeclaration\Pages\Auth\Login.razor.g.cs
 C:\Users\dell\Documents\AK Academy\PlannerApp\Blazor WASM\Project\PlannerApp\src\PlannerApp.Client\bin\Debug\netstandard2.1\dist\_framework\_bin\Blazored.LocalStorage.dll
 C:\Users\dell\Documents\AK Academy\PlannerApp\Blazor WASM\Project\PlannerApp\src\PlannerApp.Client\bin\Debug\netstandard2.1\dist\_framework\_bin\Microsoft.AspNetCore.Components.Authorization.dll
+C:\Users\dell\Documents\AK Academy\PlannerApp\Blazor WASM\Project\PlannerApp\src\PlannerApp.Client\bin\Debug\netstandard2.1\Blazored.LocalStorage.dll
 C:\Users\dell\Documents\AK Academy\PlannerApp\Blazor WASM\Project\PlannerApp\src\PlannerApp.Client\obj\Debug\netstandard2.1\RazorDeclaration\PlannerApp.Client.dll
 C:\Users\dell\Documents\AK Academy\PlannerApp\Blazor WASM\Project\PlannerApp\src\PlannerApp.Client\obj\Debug\netstandard2.1\PlannerApp.Client.TagHelpers.input.cache
 C:\Users\dell\Documents\AK Academy\PlannerApp\Blazor WASM\Project\PlannerApp\src\PlannerApp.Client\obj\Debug\netstandard2.1\PlannerApp.Client.TagHelpers.output.cache

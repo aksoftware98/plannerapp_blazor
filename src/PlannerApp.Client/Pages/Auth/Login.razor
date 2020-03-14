@@ -5,20 +5,13 @@
 
 @inject AuthenticationService  authService
 @inject NavigationManager navigationManager
-
+@inject ILocalStorageService storageService
 <div class="row">
     <div class="col-12">
         <h2>Login to your account</h2>
         <EditForm Model="model" OnValidSubmit="LoginUser">
             <RadzenCard>
                 <AlertMessage Message="@message" MessageType="@messageType" />
-
-                <ul>
-                    @foreach (var item in userInfo)
-                    {
-                        <li>@item.Key  : @item.Value</li>
-                    }
-                </ul>
 
                 <DataAnnotationsValidator />
                 <ValidationSummary />
@@ -49,8 +42,6 @@
     string message = string.Empty;
     Models.AlertMessageType messageType = Models.AlertMessageType.Success;
 
-    Dictionary<string, string> userInfo = new Dictionary<string, string>(); 
-
     public async Task LoginUser()
     {
         isBusy = true;
@@ -58,8 +49,20 @@
         if (result.IsSuccess)
         {
             message = "Welcome to PlannerApp";
-            userInfo = result.UserInfo; 
             messageType = Models.AlertMessageType.Success;
+
+            var userInfo = new PlannerApp.Client.Models.LocalUserInfo()
+            {
+                AccessToken = result.Message,
+                Email = result.UserInfo["Email"],
+                FirstName = result.UserInfo["FirstName"],
+                LastName = result.UserInfo["LastName"],
+                Id = result.UserInfo[System.Security.Claims.ClaimTypes.NameIdentifier],
+            };
+
+            await storageService.SetItemAsync("User", userInfo);
+
+
         }
         else
         {
