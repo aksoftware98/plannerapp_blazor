@@ -251,3 +251,5 @@ C:\Users\dell\Documents\AK Academy\PlannerApp\Blazor WASM\Project\PlannerApp\src
 C:\Users\dell\Documents\AK Academy\PlannerApp\Blazor WASM\Project\PlannerApp\src\PlannerApp.Client\bin\Debug\netstandard2.1\dist\_framework\_bin\Microsoft.AspNetCore.Components.Authorization.dll
 C:\Users\dell\Documents\AK Academy\PlannerApp\Blazor WASM\Project\PlannerApp\src\PlannerApp.Client\bin\Debug\netstandard2.1\dist\_framework\_bin\PlannerApp.Client.pdb
 C:\Users\dell\Documents\AK Academy\PlannerApp\Blazor WASM\Project\PlannerApp\src\PlannerApp.Client\bin\Debug\netstandard2.1\dist\_framework\_bin\System.Linq.Dynamic.Core.pdb
+C:\Users\dell\Documents\AK Academy\PlannerApp\Blazor WASM\Project\PlannerApp\src\PlannerApp.Client\obj\Debug\netstandard2.1\RazorDeclaration\Pages\Auth\RedirectToLogin.razor.g.cs
+C:\Users\dell\Documents\AK Academy\PlannerApp\Blazor WASM\Project\PlannerApp\src\PlannerApp.Client\obj\Debug\netstandard2.1\Razor\Pages\Auth\RedirectToLogin.razor.g.cs
