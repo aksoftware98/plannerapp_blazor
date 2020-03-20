@@ -21,6 +21,11 @@ namespace PlannerApp.Client
             {
                 return new AuthenticationService(URL);
             });
+            builder.Services.AddScoped<PlansService>(s =>
+            {
+                return new PlansService(URL);
+            });
+
             builder.Services.AddBlazoredLocalStorage();
             builder.Services.AddOptions();
             builder.Services.AddAuthorizationCore();
