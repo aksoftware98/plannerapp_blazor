@@ -44,5 +44,10 @@ namespace PlannerApp.Client
             return new AuthenticationState(new ClaimsPrincipal());
         }
 
+        public async Task LogoutAsync()
+        {
+            await _storageService.RemoveItemAsync("User");
+            NotifyAuthenticationStateChanged(Task.FromResult(new AuthenticationState(new ClaimsPrincipal())));
+        }
     }
 }
