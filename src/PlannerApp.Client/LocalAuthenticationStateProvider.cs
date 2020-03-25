@@ -30,7 +30,7 @@ namespace PlannerApp.Client
                     new Claim("Email", userInfo.Email),
                     new Claim("FirstName", userInfo.FirstName),
                     new Claim("LastName", userInfo.LastName),
-                    new Claim("AccessToken", userInfo.LastName),
+                    new Claim("AccessToken", userInfo.AccessToken),
                     new Claim(ClaimTypes.NameIdentifier, userInfo.Id),
                 };
 

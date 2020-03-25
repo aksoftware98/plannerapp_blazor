@@ -1,0 +1,83 @@
+﻿@page "/plans"
+@page "/plans/{pageNumber}"
+
+@inject PlansService plansService
+@attribute [Authorize]
+
+<h3>My Plans</h3>
+@if (isBusy)
+{
+    <h2>Loading...</h2>
+}
+else
+{
+    <div class="row">
+        <RadzenTextBox Placeholder="Search Query" />
+    </div>
+    <hr />
+
+    <div class="row">
+
+        @foreach (var plan in plans)
+        {
+            <div class="col-4">
+                <RadzenCard Style="margin:10px">
+                    <img src="@plan.CoverPath" style="width:90%;margin:5px" />
+                    <h2>@plan.Title</h2>
+                    <p>@plan.Description</p>
+                    <div class="row">
+                        <div class="col-6">
+                            <RadzenButton ButtonStyle="Radzen.ButtonStyle.Success" Text="Edit" class="btn-block" />
+                        </div>
+                        <div class="col-6">
+                            <RadzenButton ButtonStyle="Radzen.ButtonStyle.Danger" Text="Delete" class="btn-block" />
+                        </div>
+                    </div>
+                </RadzenCard>
+            </div>
+        }
+
+
+    </div>
+    <hr />
+
+    <div class="row">
+        <RadzenButton ButtonStyle="Radzen.ButtonStyle.Info" Text="1" Style="margin:8px;" />
+    </div>
+}
+
+@code {
+    [Parameter]
+    public int? PageNumber { get; set; }
+
+    [CascadingParameter]
+    private Task<AuthenticationState> authenticationState { get; set; }
+
+    bool isBusy = false;
+    List<Plan> plans = new List<Plan>();
+
+
+
+
+    async Task getPlansAsync()
+    {
+        isBusy = true;
+
+        var userState = authenticationState.Result;
+        plansService.AccessToken = userState.User.FindFirst("AccessToken").Value;
+
+        if (PageNumber == null)
+            PageNumber = 1;
+        var result = await plansService.GetAllPlansByPageAsync(PageNumber.Value);
+        
+        plans = result.Records.ToList();
+
+        isBusy = false;
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await getPlansAsync();
+    }
+
+}
