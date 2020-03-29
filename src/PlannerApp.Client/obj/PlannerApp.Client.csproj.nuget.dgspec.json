@@ -76,6 +76,10 @@
             "Radzen.Blazor": {
               "target": "Package",
               "version": "[2.2.5, )"
+            },
+            "Tewr.Blazor.FileReader": {
+              "target": "Package",
+              "version": "[1.4.0.20072, )"
             }
           },
           "imports": [

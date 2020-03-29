@@ -98,6 +98,13 @@ using Microsoft.AspNetCore.Authorization;
 #line hidden
 #nullable disable
 #nullable restore
+#line 14 "C:\Users\dell\Documents\AK Academy\PlannerApp\Blazor WASM\Project\PlannerApp\src\PlannerApp.Client\_Imports.razor"
+using Blazor.FileReader;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 4 "C:\Users\dell\Documents\AK Academy\PlannerApp\Blazor WASM\Project\PlannerApp\src\PlannerApp.Client\Pages\Auth\Login.razor"
 using PlannerApp.Shared.Models;
 

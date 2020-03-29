@@ -22,6 +22,7 @@
     </Content>
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)tewr.blazor.filereader\1.4.0.20072\buildTransitive\Tewr.Blazor.FileReader.props" Condition="Exists('$(NuGetPackageRoot)tewr.blazor.filereader\1.4.0.20072\buildTransitive\Tewr.Blazor.FileReader.props')" />
     <Import Project="$(NuGetPackageRoot)radzen.blazor\2.2.5\buildTransitive\Radzen.Blazor.props" Condition="Exists('$(NuGetPackageRoot)radzen.blazor\2.2.5\buildTransitive\Radzen.Blazor.props')" />
     <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.blazor.mono\3.2.0-preview1.20067.1\build\netstandard1.0\Microsoft.AspNetCore.Blazor.Mono.props" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.blazor.mono\3.2.0-preview1.20067.1\build\netstandard1.0\Microsoft.AspNetCore.Blazor.Mono.props')" />
     <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.blazor.build\3.2.0-preview1.20073.1\build\netstandard1.0\Microsoft.AspNetCore.Blazor.Build.props" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.blazor.build\3.2.0-preview1.20073.1\build\netstandard1.0\Microsoft.AspNetCore.Blazor.Build.props')" />
