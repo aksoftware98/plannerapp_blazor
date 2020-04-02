@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
-      "AKSoftware.WebApi/3.0.0": {
+      "AKSoftware.WebApi/3.0.1": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "11.0.2"
@@ -59,14 +59,14 @@
     }
   },
   "libraries": {
-    "AKSoftware.WebApi/3.0.0": {
-      "sha512": "oTmlV2XyhNJ1XjASz6iwxIklgMnPgAmyvPOOZvF46H+WqqLYXMiyFUgtpTwzbuIzW7V+nBOWA1pNAs2IFb8n6A==",
+    "AKSoftware.WebApi/3.0.1": {
+      "sha512": "ngIG2OFvGVgB0Vw2ge0QBJQpxb7WH688UxWal6GTKZDfeNfHfNQaVd6kkt/+j3Y350bWnS6quIFZY2ZWOBaQcQ==",
       "type": "package",
-      "path": "aksoftware.webapi/3.0.0",
+      "path": "aksoftware.webapi/3.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "aksoftware.webapi.3.0.0.nupkg.sha512",
+        "aksoftware.webapi.3.0.1.nupkg.sha512",
         "aksoftware.webapi.nuspec",
         "lib/netstandard2.0/AKSoftware.WebApi.dll",
         "license.txt"
@@ -338,7 +338,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "AKSoftware.WebApi >= 3.0.0",
+      "AKSoftware.WebApi >= 3.0.1",
       "NETStandard.Library >= 2.0.3",
       "System.ComponentModel.Annotations >= 4.7.0"
     ]
@@ -389,7 +389,7 @@
         "dependencies": {
           "AKSoftware.WebApi": {
             "target": "Package",
-            "version": "[3.0.0, )"
+            "version": "[3.0.1, )"
           },
           "NETStandard.Library": {
             "suppressParent": "All",

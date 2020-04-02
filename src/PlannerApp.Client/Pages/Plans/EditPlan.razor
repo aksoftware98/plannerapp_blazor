@@ -1,0 +1,141 @@
+﻿@page "/plans/details/{id}"
+
+@inject PlansService  plansService
+@inject IFileReaderService fileReaderSerivce
+@inject NavigationManager navigationManager
+
+@attribute [Authorize]
+
+<h3>Plan @model.Title</h3>
+
+<div class="row">
+    <div class="col-6">
+        <EditForm Model="model" OnValidSubmit="async () => await editPlanAsync()">
+            <RadzenCard>
+                <AlertMessage Message="@message" MessageType="@messageType" />
+                <DataAnnotationsValidator />
+                <ValidationSummary />
+
+                <RadzenTextBox Placeholder="Title" @bind-Value="model.Title" Style="margin:10px;" />
+                <Radzen.Blazor.RadzenTextArea Placeholder="Description" @bind-Value="@model.Description" Style="margin:10px;" />
+                <input type="file" Style="margin:10px;" @ref="inputReference" @onchange="async () => await chooseFileAsync()" />
+                <img style="width:100%;margin:10px" src="@imageContent" />
+                <hr />
+                <RadzenButton ButtonType="Radzen.ButtonType.Submit" ButtonStyle="Radzen.ButtonStyle.Success" 
+                              Disabled="isBusy" Style="margin:5px" class="btn btn-block" Text="Edit" />
+            </RadzenCard>
+        </EditForm>
+    </div>
+
+    <div class="col-6">
+        <RadzenCard>
+            <h2>Plan's Items</h2>
+        </RadzenCard>
+    </div>
+</div>
+
+@code {
+
+    [CascadingParameter]
+    private Task<AuthenticationState> authenticationState { get; set; }
+
+    [Parameter]
+    public string Id { get; set; }
+
+    PlanRequest model = new PlanRequest();
+    System.IO.Stream fileStream = null;
+    string imageContent = string.Empty;
+    string fileName = string.Empty;
+
+    bool isBusy = false;
+
+    ElementReference inputReference;
+
+    // Alert
+    string message = string.Empty;
+    Models.AlertMessageType messageType = Models.AlertMessageType.Success;
+
+    // Choose a cover photo for the plan
+    async Task chooseFileAsync()
+    {
+        // Read the file
+        var file = (await fileReaderSerivce.CreateReference(inputReference).EnumerateFilesAsync()).FirstOrDefault();
+
+        // Read the info of the file
+        var fileInfo = await file.ReadFileInfoAsync();
+
+        // Validate the extension
+        string extension = System.IO.Path.GetExtension(fileInfo.Name);
+        var allowedExtensions = new string[] { ".jpg", ".png", ".bmp" };
+
+        if (!allowedExtensions.Contains(extension))
+        {
+            message = "The chosen file is not a valid image file";
+            messageType = Models.AlertMessageType.Error;
+            return;
+        }
+        message = null;
+
+        // Open the stream
+        using (var memoryStream = await file.CreateMemoryStreamAsync())
+        {
+            // Copy the content to a new stream
+            fileStream = new System.IO.MemoryStream(memoryStream.ToArray());
+            fileName = fileInfo.Name;
+
+            // Show the file in the UI
+            imageContent = $"data:{fileInfo.Type};base64, {Convert.ToBase64String(memoryStream.ToArray())}";
+        }
+    }
+
+    async Task editPlanAsync()
+    {
+        isBusy = true;
+
+        model.CoverFile = fileStream;
+        model.FileName = fileName;
+        var result = await plansService.PostPlanAsync(model);
+
+        if (result.IsSuccess)
+        {
+            message = "Plan edited successfully";
+            messageType = Models.AlertMessageType.Success; 
+        }
+        else
+        {
+            message = result.Message;
+            messageType = Models.AlertMessageType.Error;
+        }
+
+        isBusy = false;
+    }
+
+    async Task getPlanById()
+    {
+        isBusy = true;
+
+        var result = await plansService.GetPlanByIdAsync(Id);
+        if(result.IsSuccess)
+        {
+            model.Title = result.Record.Title;
+            model.Description = result.Record.Description;
+            imageContent = result.Record.CoverPath;
+            model.Id = Id;
+        }
+        else
+        {
+            message = result.Message;
+            messageType = Models.AlertMessageType.Error;
+        }
+
+        isBusy = false;
+    }
+
+    protected async override Task OnInitializedAsync()
+    {
+        var userState = authenticationState.Result;
+        plansService.AccessToken = userState.User.FindFirst("AccessToken").Value;
+
+        await getPlanById();
+    }
+}

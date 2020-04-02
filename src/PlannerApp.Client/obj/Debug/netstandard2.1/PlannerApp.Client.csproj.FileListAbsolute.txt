@@ -261,3 +261,5 @@ C:\Users\dell\Documents\AK Academy\PlannerApp\Blazor WASM\Project\PlannerApp\src
 C:\Users\dell\Documents\AK Academy\PlannerApp\Blazor WASM\Project\PlannerApp\src\PlannerApp.Client\obj\Debug\netstandard2.1\Razor\Shared\SurveyPrompt.razor.g.cs
 C:\Users\dell\Documents\AK Academy\PlannerApp\Blazor WASM\Project\PlannerApp\src\PlannerApp.Client\obj\Debug\netstandard2.1\Razor\Shared\UserStatus.razor.g.cs
 C:\Users\dell\Documents\AK Academy\PlannerApp\Blazor WASM\Project\PlannerApp\src\PlannerApp.Client\obj\Debug\netstandard2.1\Razor\_Imports.razor.g.cs
+C:\Users\dell\Documents\AK Academy\PlannerApp\Blazor WASM\Project\PlannerApp\src\PlannerApp.Client\obj\Debug\netstandard2.1\RazorDeclaration\Pages\Plans\EditPlan.razor.g.cs
+C:\Users\dell\Documents\AK Academy\PlannerApp\Blazor WASM\Project\PlannerApp\src\PlannerApp.Client\obj\Debug\netstandard2.1\Razor\Pages\Plans\EditPlan.razor.g.cs

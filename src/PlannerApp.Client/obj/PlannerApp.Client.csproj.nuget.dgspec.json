@@ -142,7 +142,7 @@
           "dependencies": {
             "AKSoftware.WebApi": {
               "target": "Package",
-              "version": "[3.0.0, )"
+              "version": "[3.0.1, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
