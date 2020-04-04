@@ -104,6 +104,13 @@ using Microsoft.AspNetCore.Authorization;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 14 "C:\Users\dell\Documents\AK Academy\PlannerApp\Blazor WASM\Project\PlannerApp\src\PlannerApp.Client\_Imports.razor"
+using Blazor.FileReader;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/auth/redirecttologin")]
     public partial class RedirectToLogin : Microsoft.AspNetCore.Components.ComponentBase
     {

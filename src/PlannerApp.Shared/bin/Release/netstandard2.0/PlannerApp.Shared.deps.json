@@ -9,7 +9,7 @@
     ".NETStandard,Version=v2.0/": {
       "PlannerApp.Shared/1.0.0": {
         "dependencies": {
-          "AKSoftware.WebApi": "3.0.0",
+          "AKSoftware.WebApi": "3.0.1",
           "NETStandard.Library": "2.0.3",
           "System.ComponentModel.Annotations": "4.7.0"
         },
@@ -17,14 +17,14 @@
           "PlannerApp.Shared.dll": {}
         }
       },
-      "AKSoftware.WebApi/3.0.0": {
+      "AKSoftware.WebApi/3.0.1": {
         "dependencies": {
           "Newtonsoft.Json": "11.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/AKSoftware.WebApi.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.0.0"
+            "assemblyVersion": "3.0.1.0",
+            "fileVersion": "3.0.1.0"
           }
         }
       },
@@ -58,12 +58,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "AKSoftware.WebApi/3.0.0": {
+    "AKSoftware.WebApi/3.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-oTmlV2XyhNJ1XjASz6iwxIklgMnPgAmyvPOOZvF46H+WqqLYXMiyFUgtpTwzbuIzW7V+nBOWA1pNAs2IFb8n6A==",
-      "path": "aksoftware.webapi/3.0.0",
-      "hashPath": "aksoftware.webapi.3.0.0.nupkg.sha512"
+      "sha512": "sha512-ngIG2OFvGVgB0Vw2ge0QBJQpxb7WH688UxWal6GTKZDfeNfHfNQaVd6kkt/+j3Y350bWnS6quIFZY2ZWOBaQcQ==",
+      "path": "aksoftware.webapi/3.0.1",
+      "hashPath": "aksoftware.webapi.3.0.1.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",

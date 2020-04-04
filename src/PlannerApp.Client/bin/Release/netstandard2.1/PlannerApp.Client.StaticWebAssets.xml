@@ -1,3 +1,4 @@
 ﻿<StaticWebAssets Version="1.0">
   <ContentRoot BasePath="_content/Radzen.Blazor" Path="C:\Users\dell\.nuget\packages\radzen.blazor\2.2.5\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Tewr.Blazor.FileReader" Path="C:\Users\dell\.nuget\packages\tewr.blazor.filereader\1.4.0.20072\build\..\staticwebassets\" />
 </StaticWebAssets>
